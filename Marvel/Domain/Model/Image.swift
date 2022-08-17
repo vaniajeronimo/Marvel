@@ -11,8 +11,14 @@ public struct Image: Codable {
     public var path: String?
     public var img_extension: String?
     
-    public init(path: String? = "", img_extension: String? = "") {
-        self.path = path
-        self.img_extension = img_extension
+    enum ImageCodingKey: String, CodingKey {
+        case path
+        case img_extension = "extension"
+    }
+    
+    public init(from decoder: Decoder) throws {
+        let container = try decoder.container(keyedBy: ImageCodingKey.self)
+        self.path = try container.decodeIfPresent(String.self, forKey: .path)
+        self.img_extension = try container.decodeIfPresent(String.self, forKey: .img_extension)
     }
 }
