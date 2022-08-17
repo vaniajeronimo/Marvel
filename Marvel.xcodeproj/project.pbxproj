@@ -26,6 +26,14 @@
 		3A2BA1BA28ADA529002578EC /* StoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1B928ADA529002578EC /* StoryList.swift */; };
 		3A2BA1BC28ADA53A002578EC /* EventList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1BB28ADA53A002578EC /* EventList.swift */; };
 		3A2BA1BE28ADA54D002578EC /* SeriesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1BD28ADA54D002578EC /* SeriesList.swift */; };
+		3A2BA1C028ADA984002578EC /* DomainCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1BF28ADA984002578EC /* DomainCharacterRepository.swift */; };
+		3A2BA1C228ADA9D9002578EC /* GetCharacterUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1C128ADA9D9002578EC /* GetCharacterUseCase.swift */; };
+		3A2BA1C428ADAA63002578EC /* DomainDependenciesInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1C328ADAA63002578EC /* DomainDependenciesInjector.swift */; };
+		3A2BA1C628ADAACA002578EC /* InfrastructureDependenciesInjector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1C528ADAACA002578EC /* InfrastructureDependenciesInjector.swift */; };
+		3A2BA1C828ADAB19002578EC /* InfrastructureCharacterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1C728ADAB19002578EC /* InfrastructureCharacterRepository.swift */; };
+		3A2BA1CA28ADABE3002578EC /* CharacterDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1C928ADABE3002578EC /* CharacterDataProvider.swift */; };
+		3A2BA1CC28ADAD02002578EC /* CharacterResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1CB28ADAD02002578EC /* CharacterResponse.swift */; };
+		3A2BA1CE28ADAD6D002578EC /* CharacterMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A2BA1CD28ADAD6D002578EC /* CharacterMapper.swift */; };
 		566018E556341BBC04488518 /* Pods_MarvelUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E39ED1DBA0BF3D8AAFC5FC8 /* Pods_MarvelUITests.framework */; };
 		F0406162B321B530CBCCCD8A /* Pods_MarvelTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E3DAE9A3DBDD0BA3B97D440 /* Pods_MarvelTests.framework */; };
 /* End PBXBuildFile section */
@@ -73,6 +81,14 @@
 		3A2BA1B928ADA529002578EC /* StoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryList.swift; sourceTree = "<group>"; };
 		3A2BA1BB28ADA53A002578EC /* EventList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventList.swift; sourceTree = "<group>"; };
 		3A2BA1BD28ADA54D002578EC /* SeriesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeriesList.swift; sourceTree = "<group>"; };
+		3A2BA1BF28ADA984002578EC /* DomainCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainCharacterRepository.swift; sourceTree = "<group>"; };
+		3A2BA1C128ADA9D9002578EC /* GetCharacterUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetCharacterUseCase.swift; sourceTree = "<group>"; };
+		3A2BA1C328ADAA63002578EC /* DomainDependenciesInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DomainDependenciesInjector.swift; sourceTree = "<group>"; };
+		3A2BA1C528ADAACA002578EC /* InfrastructureDependenciesInjector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureDependenciesInjector.swift; sourceTree = "<group>"; };
+		3A2BA1C728ADAB19002578EC /* InfrastructureCharacterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfrastructureCharacterRepository.swift; sourceTree = "<group>"; };
+		3A2BA1C928ADABE3002578EC /* CharacterDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterDataProvider.swift; sourceTree = "<group>"; };
+		3A2BA1CB28ADAD02002578EC /* CharacterResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterResponse.swift; sourceTree = "<group>"; };
+		3A2BA1CD28ADAD6D002578EC /* CharacterMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterMapper.swift; sourceTree = "<group>"; };
 		4E3DAE9A3DBDD0BA3B97D440 /* Pods_MarvelTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E39ED1DBA0BF3D8AAFC5FC8 /* Pods_MarvelUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MarvelUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A33CC992278C206E11E60313 /* Pods-MarvelUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MarvelUITests.release.xcconfig"; path = "Target Support Files/Pods-MarvelUITests/Pods-MarvelUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -212,6 +228,7 @@
 				3A2BA1AC28AD9B3E002578EC /* UseCase */,
 				3A2BA1AB28AD9B36002578EC /* Repository */,
 				3A2BA1AA28AD9B28002578EC /* Model */,
+				3A2BA1C328ADAA63002578EC /* DomainDependenciesInjector.swift */,
 			);
 			path = Domain;
 			sourceTree = "<group>";
@@ -223,6 +240,7 @@
 				3A2BA1AF28AD9B75002578EC /* Model */,
 				3A2BA1AE28AD9B6A002578EC /* DataProvider */,
 				3A2BA1AD28AD9B50002578EC /* Repository */,
+				3A2BA1C528ADAACA002578EC /* InfrastructureDependenciesInjector.swift */,
 			);
 			path = Infrastructure;
 			sourceTree = "<group>";
@@ -244,6 +262,7 @@
 		3A2BA1AB28AD9B36002578EC /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				3A2BA1BF28ADA984002578EC /* DomainCharacterRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -251,6 +270,7 @@
 		3A2BA1AC28AD9B3E002578EC /* UseCase */ = {
 			isa = PBXGroup;
 			children = (
+				3A2BA1C128ADA9D9002578EC /* GetCharacterUseCase.swift */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -258,6 +278,7 @@
 		3A2BA1AD28AD9B50002578EC /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				3A2BA1C728ADAB19002578EC /* InfrastructureCharacterRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -265,6 +286,7 @@
 		3A2BA1AE28AD9B6A002578EC /* DataProvider */ = {
 			isa = PBXGroup;
 			children = (
+				3A2BA1C928ADABE3002578EC /* CharacterDataProvider.swift */,
 			);
 			path = DataProvider;
 			sourceTree = "<group>";
@@ -272,6 +294,7 @@
 		3A2BA1AF28AD9B75002578EC /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3A2BA1CB28ADAD02002578EC /* CharacterResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +302,7 @@
 		3A2BA1B028AD9B92002578EC /* Mapper */ = {
 			isa = PBXGroup;
 			children = (
+				3A2BA1CD28ADAD6D002578EC /* CharacterMapper.swift */,
 			);
 			path = Mapper;
 			sourceTree = "<group>";
@@ -569,8 +593,16 @@
 				3A2BA1B628ADA4E9002578EC /* Image.swift in Sources */,
 				3A2BA17428AD9479002578EC /* MainViewController.swift in Sources */,
 				3A2BA1B428ADA4D3002578EC /* Url.swift in Sources */,
+				3A2BA1CA28ADABE3002578EC /* CharacterDataProvider.swift in Sources */,
+				3A2BA1C228ADA9D9002578EC /* GetCharacterUseCase.swift in Sources */,
+				3A2BA1C028ADA984002578EC /* DomainCharacterRepository.swift in Sources */,
 				3A2BA1BE28ADA54D002578EC /* SeriesList.swift in Sources */,
+				3A2BA1CE28ADAD6D002578EC /* CharacterMapper.swift in Sources */,
+				3A2BA1CC28ADAD02002578EC /* CharacterResponse.swift in Sources */,
+				3A2BA1C628ADAACA002578EC /* InfrastructureDependenciesInjector.swift in Sources */,
+				3A2BA1C428ADAA63002578EC /* DomainDependenciesInjector.swift in Sources */,
 				3A2BA17028AD9479002578EC /* AppDelegate.swift in Sources */,
+				3A2BA1C828ADAB19002578EC /* InfrastructureCharacterRepository.swift in Sources */,
 				3A2BA1B228AD9D83002578EC /* Character.swift in Sources */,
 				3A2BA17228AD9479002578EC /* SceneDelegate.swift in Sources */,
 				3A2BA1A428AD9823002578EC /* Array+Extensions.swift in Sources */,
